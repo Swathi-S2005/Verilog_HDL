@@ -1,0 +1,63 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x64b14c9e1bf0 .scope module, "tb_halfsub" "tb_halfsub" 2 1;
+ .timescale 0 0;
+v0x64b14c9f4e80_0 .var "a", 0 0;
+v0x64b14c9f4f40_0 .var "b", 0 0;
+v0x64b14c9f5010_0 .net "borrow", 0 0, L_0x64b14c9f53b0;  1 drivers
+v0x64b14c9f5110_0 .net "diff", 0 0, L_0x64b14c9f51e0;  1 drivers
+S_0x64b14c9e1d80 .scope module, "uut" "halfsub" 2 4, 3 1 0, S_0x64b14c9e1bf0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "diff";
+    .port_info 3 /OUTPUT 1 "borrow";
+L_0x64b14c9f51e0 .functor XOR 1, v0x64b14c9f4e80_0, v0x64b14c9f4f40_0, C4<0>, C4<0>;
+L_0x64b14c9f5340 .functor NOT 1, v0x64b14c9f4e80_0, C4<0>, C4<0>, C4<0>;
+L_0x64b14c9f53b0 .functor AND 1, L_0x64b14c9f5340, v0x64b14c9f4f40_0, C4<1>, C4<1>;
+v0x64b14c9e1f80_0 .net "a", 0 0, v0x64b14c9f4e80_0;  1 drivers
+v0x64b14c9f4aa0_0 .net "b", 0 0, v0x64b14c9f4f40_0;  1 drivers
+v0x64b14c9f4b60_0 .net "borrow", 0 0, L_0x64b14c9f53b0;  alias, 1 drivers
+v0x64b14c9f4c30_0 .net "c", 0 0, L_0x64b14c9f5340;  1 drivers
+v0x64b14c9f4cf0_0 .net "diff", 0 0, L_0x64b14c9f51e0;  alias, 1 drivers
+    .scope S_0x64b14c9e1bf0;
+T_0 ;
+    %vpi_call 2 10 "$dumpfile", "halfsub.vcd" {0 0 0};
+    %vpi_call 2 11 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x64b14c9e1bf0 {0 0 0};
+    %vpi_call 2 12 "$monitor", "Time=%0t | a=%b | b=%b | diff=%b | borrow=%b", $time, v0x64b14c9f4e80_0, v0x64b14c9f4f40_0, v0x64b14c9f5110_0, v0x64b14c9f5010_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b14c9f4e80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b14c9f4f40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b14c9f4e80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b14c9f4f40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b14c9f4e80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b14c9f4f40_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b14c9f4e80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b14c9f4f40_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 17 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_halfsub.v";
+    "halfsub_data.v";

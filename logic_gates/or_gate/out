@@ -1,0 +1,69 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x652dfeb46970 .scope module, "tb_switch" "tb_switch" 2 1;
+ .timescale 0 0;
+v0x652dfeb58940_0 .var "a", 0 0;
+v0x652dfeb589e0_0 .var "b", 0 0;
+RS_0x7f6e72289138 .resolv tri, L_0x652dfeb58f70, L_0x652dfeb591f0;
+v0x652dfeb58ab0_0 .net8 "y", 0 0, RS_0x7f6e72289138;  2 drivers, strength-aware
+S_0x652dfeb46b00 .scope module, "uut" "switch_or" 2 4, 3 1 0, S_0x652dfeb46970;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x652dfeb58c50 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+L_0x652dfeb58cf0 .functor PMOS 1, L_0x652dfeb58c50, v0x652dfeb58940_0, C4<0>, C4<0>;
+L_0x652dfeb58e30 .functor PMOS 1, L_0x652dfeb58cf0, v0x652dfeb589e0_0, C4<0>, C4<0>;
+RS_0x7f6e72289108 .resolv tri, L_0x652dfeb58e30, L_0x652dfeb59080, L_0x652dfeb59180;
+L_0x652dfeb58f70 .functor PMOS 1, L_0x652dfeb58c50, RS_0x7f6e72289108, C4<0>, C4<0>;
+L_0x652dfeb58bb0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+L_0x652dfeb59080 .functor NMOS 1, L_0x652dfeb58bb0, v0x652dfeb58940_0, C4<0>, C4<0>;
+L_0x652dfeb59180 .functor NMOS 1, L_0x652dfeb58bb0, v0x652dfeb589e0_0, C4<0>, C4<0>;
+L_0x652dfeb591f0 .functor NMOS 1, L_0x652dfeb58bb0, RS_0x7f6e72289108, C4<0>, C4<0>;
+v0x652dfeb470d0_0 .net "a", 0 0, v0x652dfeb58940_0;  1 drivers
+v0x652dfeb58410_0 .net "b", 0 0, v0x652dfeb589e0_0;  1 drivers
+v0x652dfeb584d0_0 .net8 "gnd", 0 0, L_0x652dfeb58bb0;  1 drivers, strength-aware
+v0x652dfeb58570_0 .net8 "vdd", 0 0, L_0x652dfeb58c50;  1 drivers, strength-aware
+v0x652dfeb58630_0 .net8 "w", 0 0, L_0x652dfeb58cf0;  1 drivers, strength-aware
+v0x652dfeb58740_0 .net8 "x", 0 0, RS_0x7f6e72289108;  3 drivers, strength-aware
+v0x652dfeb58800_0 .net8 "y", 0 0, RS_0x7f6e72289138;  alias, 2 drivers, strength-aware
+    .scope S_0x652dfeb46970;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "switch.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x652dfeb46970 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x652dfeb58940_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x652dfeb589e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x652dfeb58940_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x652dfeb589e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x652dfeb58940_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x652dfeb589e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x652dfeb58940_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x652dfeb589e0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 15 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_switch.v";
+    "switch_or.v";
