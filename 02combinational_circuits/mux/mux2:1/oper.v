@@ -1,6 +1,6 @@
 module mux(
 input a,b,s,
 output y);
-assign y = s?a:b;
+assign y = (s==0)?a:b;
 endmodule
 
