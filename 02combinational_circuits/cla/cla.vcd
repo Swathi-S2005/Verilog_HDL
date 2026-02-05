@@ -1,0 +1,60 @@
+$date
+	Thu Feb  5 12:27:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_cla $end
+$var wire 4 ! sum [3:0] $end
+$var wire 1 " cout $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % cin $end
+$scope module uut $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 % cin $end
+$var wire 4 ( sum [3:0] $end
+$var wire 4 ) p [3:0] $end
+$var wire 4 * g [3:0] $end
+$var wire 1 " cout $end
+$var wire 4 + c [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 +
+b1 *
+b100 )
+b110 (
+b101 '
+b1 &
+0%
+b101 $
+b1 #
+0"
+b110 !
+$end
+#10
+b111 +
+b1000 !
+b1000 (
+b110 )
+b11 #
+b11 &
+#20
+b0 +
+b111 !
+b111 (
+b111 )
+b0 *
+b10 #
+b10 &
+#30
