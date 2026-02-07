@@ -1,0 +1,108 @@
+$date
+	Sat Feb  7 22:41:51 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_fsm $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # clk $end
+$var reg 1 $ rst $end
+$scope module uut $end
+$var wire 1 " a $end
+$var wire 1 # clk $end
+$var wire 1 $ rst $end
+$var parameter 2 % s0 $end
+$var parameter 2 & s1 $end
+$var parameter 2 ' s2 $end
+$var parameter 2 ( s3 $end
+$var reg 4 ) next_state [3:0] $end
+$var reg 4 * state [3:0] $end
+$var reg 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 (
+b10 '
+b1 &
+b0 %
+$end
+#0
+$dumpvars
+b0 *
+b1 )
+1$
+0#
+1"
+0!
+$end
+#5
+1#
+#10
+0#
+#15
+1#
+#20
+0#
+0$
+#25
+b1 *
+1#
+#30
+0#
+#35
+1#
+#40
+b10 )
+0#
+0"
+#45
+b0 )
+b10 *
+1#
+#50
+b11 )
+0#
+1"
+#55
+1!
+b1 )
+b11 *
+1#
+#60
+0#
+#65
+0!
+b1 *
+1#
+#70
+b10 )
+0#
+0"
+#75
+b0 )
+b10 *
+1#
+#80
+b11 )
+0#
+1"
+#85
+1!
+b1 )
+b11 *
+1#
+#90
+0#
+#95
+0!
+b1 *
+1#
+#100
+0#
