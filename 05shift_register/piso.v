@@ -1,20 +1,19 @@
-module shiftreg(
-input clk,rst,in,
+module piso(
+input [3:0]in,
+input clk,rst,load,
 output reg out);
 reg [3:0]shift;
 always @(posedge clk or posedge rst)
 begin
 if(rst)
-begin
-  out <= 1'b0;
-  shift <= 4'b0000;
-end
+ shift <= 4'b0000;
+else if(load)
+ shift <= in;
 else
 begin
- shift <= {shift[2:0],in};
+ shift <= ({shift[2:0],in});
  out <= shift[3];
 end
 end
 endmodule
-
 

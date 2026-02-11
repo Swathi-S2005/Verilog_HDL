@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Sat Sep 13 06:57:43 2025
+[*]
+[dumpfile] "/home/swathi/mag_cmp.vcd"
+[dumpfile_mtime] "Sat Sep 13 06:54:49 2025"
+[dumpfile_size] 836
+[savefile] "/home/swathi/Pictures/Screenshots/2bit mag_cmp.gtkw"
+[timestart] 0
+[size] 1850 993
+[pos] -27 -24
+*-5.697386 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 314
+[signals_width] 90
+[sst_expanded] 1
+[sst_vpaned_height] 292
+@28
+tb_mag_cmp.a[1:0]
+tb_mag_cmp.b[1:0]
+tb_mag_cmp.c
+tb_mag_cmp.d
+tb_mag_cmp.e
+tb_mag_cmp.uut.a[1:0]
+tb_mag_cmp.uut.b[1:0]
+tb_mag_cmp.uut.c
+tb_mag_cmp.uut.d
+tb_mag_cmp.uut.e
+[pattern_trace] 1
+[pattern_trace] 0

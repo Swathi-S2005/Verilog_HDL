@@ -1,33 +1,27 @@
-module sr_ff(
-input s,r,clk,rst,
+module d_ff(
+input d, clk,rst,
 output reg q);
 always @(posedge clk or posedge rst)
-begin 
+begin
 if(rst)
-q<=1'b0;
+ q<=1'b0;
+else if(d===1'bx);
+ q<=1'bx;
 else
-case({s,r})
-2'b00:q<=q;
-2'b01:q<=1'b0;
-2'b10:q<=1'b1;
-2'b11:q<=1'bx;
-endcase
+ q<=d;
 end
 endmodule
 
-module d_ff(
-input d,
-input clk,rst,
+module sr_ff(
+input s,r,clk,rst,
 output q);
-assign s = d;
-assign r = ~d;
-sr_ff sr1(
-.s(s),
-.r(r),
+wire a,b;
+assign b = s|(~r&q);
+assign a=((s&r)? 1'bx:b);
+d_ff sr1(
+.d(a),
 .clk(clk),
 .rst(rst),
 .q(q));
 endmodule
-
- 
 

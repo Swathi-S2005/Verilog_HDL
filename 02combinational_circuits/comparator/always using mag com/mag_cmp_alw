@@ -1,0 +1,27 @@
+module mag_cmp_alw(
+input [3:0]a,b,
+output reg c,d,e
+);
+always@(*)begin
+if(a>b)
+begin
+c=1;
+d=0;
+e=0;
+end
+else if(a<b)
+begin
+c=0;
+d=1;
+e=0;
+end
+else
+begin
+c=0;
+d=0;
+e=1;
+end
+end
+endmodule
+
+

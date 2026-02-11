@@ -7,11 +7,12 @@ begin
 if(rst)
 begin
   out <= 1'b0;
-  shift <= 4'b0000;
+  shift<= 4'b0000;
 end
+ 
 else
 begin
- shift <= {shift[2:0],in};
+ shift <= {in,shift[3:1]};
  out <= shift[3];
 end
 end

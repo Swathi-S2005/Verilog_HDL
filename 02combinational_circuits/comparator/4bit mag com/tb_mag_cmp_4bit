@@ -1,0 +1,20 @@
+module tb_mag_cmp_4bit;
+reg [3:0]a,b;
+wire c,d,e;
+mag_cmp_4bit uut(
+.a(a),
+.b(b),
+.c(c),
+.d(d),
+.e(e)
+);
+initial begin
+$dumpfile("mag_cmp_4bit.vcd");
+$dumpvars(0,tb_mag_cmp_4bit);
+a=4'b0000;b=4'b0001;#10;
+a=4'b0010;b=4'b0001;#10;
+a=4'b0011;b=4'b0011;#10;
+$finish;
+end
+endmodule
+

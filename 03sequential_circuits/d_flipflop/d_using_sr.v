@@ -1,5 +1,5 @@
 module sr_ff(
-	input s,r,clk,rst,
+input s,r,clk,rst,
 output reg q);
 always @(posedge clk or posedge rst)
 begin 
@@ -15,16 +15,19 @@ endcase
 end
 endmodule
 
-
-module t_ff(
-input t,clk,rst,
+module d_ff(
+input d,
+input clk,rst,
 output q);
-assign d0= t&~q;
-assign d1= t&q;
+assign s = d;
+assign r = ~d;
 sr_ff sr1(
-.s(d0),
-.r(d1),
+.s(s),
+.r(r),
 .clk(clk),
 .rst(rst),
 .q(q));
 endmodule
+
+ 
+
