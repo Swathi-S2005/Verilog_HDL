@@ -1,0 +1,187 @@
+$date
+	Thu Feb 12 10:51:34 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_mag $end
+$var wire 1 ! out2 $end
+$var wire 1 " out1 $end
+$var wire 1 # out0 $end
+$var reg 2 $ a [1:0] $end
+$var reg 2 % b [1:0] $end
+$scope module uut $end
+$var wire 2 & a [1:0] $end
+$var wire 2 ' b [1:0] $end
+$var wire 1 ( c $end
+$var wire 1 ) d $end
+$var wire 1 * e $end
+$var wire 1 + f $end
+$var wire 1 , g $end
+$var wire 1 - h $end
+$var wire 1 . i $end
+$var wire 1 / j $end
+$var wire 1 0 k $end
+$var wire 1 1 l $end
+$var wire 1 # out0 $end
+$var wire 1 " out1 $end
+$var wire 1 ! out2 $end
+$var wire 1 2 w $end
+$var wire 1 3 x $end
+$var wire 1 4 y $end
+$var wire 1 5 z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+15
+14
+13
+12
+01
+00
+0/
+0.
+0-
+0,
+1+
+0*
+0)
+0(
+b0 '
+b0 &
+b0 %
+b0 $
+0#
+0"
+1!
+$end
+#10
+0!
+0+
+1"
+05
+1)
+b1 %
+b1 '
+#20
+04
+15
+0)
+1*
+b10 %
+b10 '
+#30
+05
+1)
+11
+b11 %
+b11 '
+#40
+1#
+10
+0"
+14
+15
+0)
+0*
+01
+03
+b0 %
+b0 '
+b1 $
+b1 &
+#50
+0#
+00
+1!
+05
+1,
+b1 %
+b1 '
+#60
+1"
+0!
+04
+15
+1*
+0,
+b10 %
+b10 '
+#70
+05
+b11 %
+b11 '
+#80
+1#
+1/
+0"
+14
+05
+0*
+02
+13
+b1 %
+b1 '
+b10 $
+b10 &
+#90
+0#
+1!
+0/
+1.
+04
+15
+b10 %
+b10 '
+#100
+0!
+0.
+1"
+05
+11
+b11 %
+b11 '
+#110
+1#
+1/
+10
+1(
+0"
+14
+15
+01
+03
+b0 %
+b0 '
+b11 $
+b11 &
+#120
+00
+0(
+05
+b1 %
+b1 '
+#130
+0/
+1(
+04
+15
+b10 %
+b10 '
+#140
+0#
+0(
+1!
+05
+1-
+b11 %
+b11 '
+#150
