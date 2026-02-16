@@ -1,0 +1,166 @@
+$date
+	Mon Feb 16 22:53:21 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_compare $end
+$var wire 1 ! lesser $end
+$var wire 1 " greater $end
+$var wire 1 # equal $end
+$var reg 4 $ a [3:0] $end
+$var reg 4 % b [3:0] $end
+$var integer 32 & i [31:0] $end
+$var integer 32 ' j [31:0] $end
+$scope module uut $end
+$var wire 4 ( a [3:0] $end
+$var wire 4 ) b [3:0] $end
+$var wire 3 * out [2:0] $end
+$var wire 1 ! lesser $end
+$var wire 1 " greater $end
+$var wire 1 # equal $end
+$scope function cmp $end
+$var reg 4 + x [3:0] $end
+$var reg 4 , y [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ,
+b0 +
+b100 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+1#
+0"
+0!
+$end
+#10
+1!
+0#
+b10 *
+b1 ,
+b1 %
+b1 )
+b1 '
+#20
+b10 ,
+b10 %
+b10 )
+b10 '
+#30
+b11 ,
+b11 %
+b11 )
+b11 '
+#40
+1"
+0!
+b1 *
+b0 ,
+b1 +
+b0 %
+b0 )
+b1 $
+b1 (
+b1 &
+b0 '
+#50
+0"
+1#
+b100 *
+b1 ,
+b1 %
+b1 )
+b1 '
+#60
+1!
+0#
+b10 *
+b10 ,
+b10 %
+b10 )
+b10 '
+#70
+b11 ,
+b11 %
+b11 )
+b11 '
+#80
+1"
+0!
+b1 *
+b0 ,
+b10 +
+b0 %
+b0 )
+b10 $
+b10 (
+b10 &
+b0 '
+#90
+b1 ,
+b1 %
+b1 )
+b1 '
+#100
+0"
+1#
+b100 *
+b10 ,
+b10 %
+b10 )
+b10 '
+#110
+1!
+0#
+b10 *
+b11 ,
+b11 %
+b11 )
+b11 '
+#120
+1"
+0!
+b1 *
+b0 ,
+b11 +
+b0 %
+b0 )
+b11 $
+b11 (
+b11 &
+b0 '
+#130
+b1 ,
+b1 %
+b1 )
+b1 '
+#140
+b10 ,
+b10 %
+b10 )
+b10 '
+#150
+0"
+1#
+b100 *
+b11 ,
+b11 %
+b11 )
+b11 '
+#160
+b100 &
+b100 '

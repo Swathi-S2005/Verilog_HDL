@@ -1,0 +1,48 @@
+$date
+	Mon Feb 16 21:37:53 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_square $end
+$var wire 17 ! out [16:0] $end
+$var reg 8 " a [7:0] $end
+$var reg 8 # b [7:0] $end
+$scope module uut $end
+$var wire 8 $ a [7:0] $end
+$var wire 8 % b [7:0] $end
+$var wire 17 & out [16:0] $end
+$scope function square $end
+$var reg 8 ' x [7:0] $end
+$var reg 8 ( y [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11 (
+b1010 '
+b1111101000 &
+b11 %
+b1010 $
+b11 #
+b1010 "
+b1111101000 !
+$end
+#10
+b10000000000 !
+b10000000000 &
+b1010 (
+b10 '
+b1010 #
+b1010 %
+b10 "
+b10 $
+#20
