@@ -19,8 +19,8 @@ endmodule
 module jk_ff(
 input j,k,clk,rst,
 output q);
-assign s = j&q;
-assign r = k &~q;
+assign s = j&~q;
+assign r = k &q;
 sr_ff jk1(
 .s(j),
 .r(k),
