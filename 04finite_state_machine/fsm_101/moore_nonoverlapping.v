@@ -38,9 +38,9 @@ else
  next_state = s0; 
 endcase
 end
-always @(*)
+always @(posedge clk)
 begin
-if(state == s3)
+if((state == s3)&&(a==1))
  y = 1'b1;
 else
  y=1'b0;
