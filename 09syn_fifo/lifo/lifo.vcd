@@ -1,0 +1,202 @@
+$date
+	Fri Mar  6 19:04:56 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 1 ! full $end
+$var wire 1 " empty $end
+$var wire 4 # dout [3:0] $end
+$var parameter 32 $ depth $end
+$var parameter 32 % width $end
+$var reg 1 & clk $end
+$var reg 4 ' din [3:0] $end
+$var reg 1 ( pop $end
+$var reg 1 ) push $end
+$var reg 1 * rst_n $end
+$scope module uut $end
+$var wire 1 & clk $end
+$var wire 4 + din [3:0] $end
+$var wire 1 ( pop $end
+$var wire 1 ) push $end
+$var wire 1 * rst_n $end
+$var parameter 32 , depth $end
+$var parameter 32 - width $end
+$var reg 4 . dout [3:0] $end
+$var reg 1 " empty $end
+$var reg 1 ! full $end
+$var reg 4 / stack_ptr [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 -
+b1000 ,
+b100 %
+b1000 $
+$end
+#0
+$dumpvars
+b0 /
+b0 .
+b10 +
+0*
+1)
+0(
+b10 '
+0&
+b0 #
+1"
+0!
+$end
+#5
+1&
+#10
+0&
+b1101 '
+b1101 +
+1*
+#15
+0"
+b1 /
+1&
+#20
+0&
+#25
+1"
+b10 /
+1&
+#30
+0&
+b1001 '
+b1001 +
+#35
+0"
+b11 /
+1&
+#40
+0&
+b11 '
+b11 +
+#45
+b100 /
+1&
+#50
+0&
+b1101 '
+b1101 +
+#55
+b101 /
+1&
+#60
+0&
+b1001 '
+b1001 +
+#65
+b110 /
+1&
+#70
+0&
+b11 '
+b11 +
+#75
+b111 /
+1&
+#80
+0&
+b1010 '
+b1010 +
+#85
+1!
+b1000 /
+1&
+#90
+0&
+b1100 '
+b1100 +
+#95
+1&
+#100
+b1010 #
+b1010 .
+0&
+1(
+0)
+b10 '
+b10 +
+#105
+b11 #
+b11 .
+0!
+b111 /
+1&
+#110
+0&
+b1101 '
+b1101 +
+#115
+b1001 #
+b1001 .
+b110 /
+0!
+1&
+#120
+0&
+b101 '
+b101 +
+#125
+b1101 #
+b1101 .
+b101 /
+1&
+#130
+0&
+b1 '
+b1 +
+#135
+b11 #
+b11 .
+b100 /
+1&
+#140
+0&
+b10 '
+b10 +
+#145
+b1001 #
+b1001 .
+b11 /
+1&
+#150
+0&
+b1101 '
+b1101 +
+#155
+b1101 #
+b1101 .
+b10 /
+1&
+#160
+0&
+b101 '
+b101 +
+#165
+b1 /
+1&
+#170
+0&
+b1 '
+b1 +
+#175
+b0 #
+b0 .
+1"
+b0 /
+1&
+#180
+0&
