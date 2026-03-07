@@ -4,8 +4,8 @@ reg clk,rst;
 reg [width-1:0]din;
 reg wr_en,rd_en;
 wire [width-1:0]dout;
-wire [$clog2(depth):0]rd_ptr;
-wire [$clog2(depth):0]wr_ptr;
+wire [$clog2(depth)-1:0]rd_ptr;
+wire [$clog2(depth)-1:0]wr_ptr;
 
 
 fifo #(.width(width), .depth(depth)) uut (
