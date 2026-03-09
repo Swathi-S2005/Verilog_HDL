@@ -1,4 +1,4 @@
-module write_pointer #(parameter width=4, depth=4 )(
+module write_pointer #(parameter width=4 )(
 input wclk,
 input wrst_n,
 input w_en,
@@ -13,8 +13,7 @@ wire full_n;
 
 assign b_wptr_n = (w_en && !full)? (b_wptr+1):b_wptr;
 assign g_wptr_n = b_wptr_n^(b_wptr_n>>1);
-assign full_n = (g_wptr_n[depth-1:depth-2] != g_rptr_sync[depth-1:depth-2]) && (g_wptr_n[depth-3:0] == g_rptr_sync[depth-3:0]);
-
+assign full_n = (g_wptr_n == {~g_rptr_sync[width-1:width-2], g_rptr_sync[width-3:0]});
 always @(posedge wclk or  negedge wrst_n)
 begin
 if(!wrst_n)

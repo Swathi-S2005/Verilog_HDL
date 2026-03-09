@@ -16,7 +16,7 @@ output  full,
 output  empty);
 
 localparam a=$clog2(width)+1;
-localparam b=$clog2(depth)+1;
+
 
 wire [a-1:0]g_rptr_sync;
 wire [a-1:0]g_wptr_sync;
@@ -50,7 +50,7 @@ mem #( .depth(depth), .width(width)) a3(
 .full(tfull),
 .empty(tempty));
 
-write_pointer #( .width(a), .depth(b) ) a4(
+write_pointer #( .width(a) ) a4(
 .wclk(wclk),
 .wrst_n(wrst_n),
 .w_en(w_en),
